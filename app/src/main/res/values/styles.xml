@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textViewTitle">
+        <item name="android:textColor">@color/primary</item>
+        <item name="fontFamily">@font/aldrich</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="backgroundColor">
+        <item name="fontFamily">@font/aldrich</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="text" parent="CustomTextInputLayout">
+        <item name="fontFamily">@font/aldrich</item>
+    </style>
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.movie.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:foreground="@drawable/landscape_image_gradient"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            style="@style/paddingHorizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_movie_image"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_tagline"
+            style="@style/paddingHorizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_movie_title"
+            tools:text="An offer you can't refuse." />
+
+        <TextView
+            android:id="@+id/tv_genre_lang_release"
+            style="@style/paddingHorizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tagline"
+            tools:text="Adventure, Fantasy | English | 2022" />
+
+        <TextView
+            android:id="@+id/title_overview"
+            style="@style/paddingHorizontal"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/title_overview"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_genre_lang_release"
+            tools:text="This is overview" />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            style="@style/paddingHorizontal"
+            android:fontFamily="@font/aldrich"
+            android:paddingVertical="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_overview"
+            tools:text="This is overview" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            style="@style/paddingHorizontal"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/aldrich"
+            android:paddingVertical="12dp"
+            android:textSize="16sp"
+            app:drawableEndCompat="@drawable/ic_star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview"
+            tools:text="Rating: 8.8" />
+
+        <TextView
+            android:id="@+id/title_official_web"
+            style="@style/paddingHorizontal"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/title_official_website"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating" />
+
+        <TextView
+            android:id="@+id/tv_official_web"
+            style="@style/paddingHorizontal"
+            android:autoLink="web"
+            android:fontFamily="@font/aldrich"
+            android:linksClickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_official_web"
+            tools:text="https://thegodfather.com" />
+
+        <ProgressBar
+            android:id="@+id/pb_home_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Empty" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
